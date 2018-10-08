@@ -8,6 +8,10 @@ Run NPM install:
 
 ```npm install```
 
+If Gulp-CLI is not yet installed on the system, run:
+
+```npm install gulp-cli -g```
+
 Make your changes and build the CSS file using:
 
 ```gulp sass```
