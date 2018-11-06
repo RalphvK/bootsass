@@ -15,3 +15,11 @@ If Gulp-CLI is not yet installed on the system, run:
 Make your changes and build the CSS file using:
 
 ```gulp sass```
+
+or Ruby Sass:
+
+```sass scss/style.scss css/style.css```
+
+Watch for changes using Ruby Sass:
+
+```sass --watch scss/style.scss:css/style.css```
