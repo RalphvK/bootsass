@@ -23,3 +23,32 @@ or Ruby Sass:
 Watch for changes using Ruby Sass:
 
 ```sass --watch scss/style.scss:css/style.css```
+
+# Javascript files
+
+The combined javascript file ```js/scripts.min.js``` is compiled from the index in the ```js/index.json``` file. By default it looks like this:
+
+```json
+{
+    "includes": [
+        "./js/partials/**/*.js"
+    ]
+}
+```
+
+You can run the build using the following Gulp task:
+
+```gulp concat_js```
+
+Watch for changes using the following Gulp task:
+
+```gulp watch```
+
+Running ```gulp``` will run this task by default.
+
+Include the javascript file with the script tag:
+
+```html
+<!-- concatenated javascript -->
+<script src="js/scripts.min.js"></script>
+```
