@@ -35,4 +35,4 @@ gulp.task('watch', function () {
   gulp.watch('./js/index.json', ['concat_js']);
 });
 
-gulp.task('default', ['watch', 'concat_js']);
+gulp.task('default', gulp.series('watch', 'concat_js'));
