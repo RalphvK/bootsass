@@ -24,6 +24,10 @@ Watch for changes using Ruby Sass:
 
 ```sass --watch scss/style.scss:css/style.css```
 
+Or execute the batch file as a shorthand:
+
+```watch-sass```
+
 # Javascript files
 
 The combined javascript file ```js/scripts.min.js``` is compiled from the index in the ```js/index.json``` file. By default it looks like this:
