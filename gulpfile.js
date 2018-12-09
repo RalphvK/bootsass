@@ -15,18 +15,19 @@ gulp.task('sass', function () {
 
 // concat
 gulp.task('concat_js', function() {
-  // get file index 
-  var includes = JSON.parse(fs.readFileSync('./js/index.json')).includes;
-  //An array of files is required for the correct order of contact
-  return gulp.src(includes) //file array need for 
-      .pipe(concat('./scripts.js'))
-      .pipe(minify({
-          ext:{
-              src:'',
-              min:'.min.js'
-          },
-          noSource: true}))
-      .pipe(gulp.dest('./js/'));
+    // get file index 
+    var includes = JSON.parse(fs.readFileSync('./js/index.json')).includes;
+    //An array of files is required for the correct order of contact
+    return gulp.src(includes) //file array need for 
+        .pipe(concat('./scripts.js'))
+        .pipe(gulp.dest('./js/'))
+        .pipe(minify({
+            ext:{
+                src:'',
+                min:'.min.js'
+            },
+            noSource: true}))
+        .pipe(gulp.dest('./js/'));
 });
 
 // watch
