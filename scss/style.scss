@@ -1,8 +1,11 @@
-// bootstrap theme
-@import "theming/index";
+// config
+@import "config/index";
 
 // import all of Bootstrap
 @import "bootstrap/scss/bootstrap";
 
+// components
+@import "components/index";
+
 // custom styles
-@import "customisation/index";
+@import "partials/index";
