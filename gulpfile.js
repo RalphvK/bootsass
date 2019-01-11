@@ -32,7 +32,7 @@ gulp.task('concat_js', function() {
 
 // watch
 gulp.task('watch', function () {
-  gulp.watch('./js/partials/*.js', gulp.series('concat_js'));
+  gulp.watch('./js/partials/**/*.js', gulp.series('concat_js'));
   gulp.watch('./js/index.json', gulp.series('concat_js'));
 });
 
