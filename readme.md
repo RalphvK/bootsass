@@ -2,7 +2,14 @@
 
 Clone this repository:
 
-```git clone https://github.com/RalphvK/bootsass.git```
+```
+git clone https://github.com/RalphvK/bootsass.git your-project
+```
+
+Remove remote "origin". Alternatively, you can remove the git folder completely and reinitialise git.
+
+```git remote rm origin```
+
 
 Run NPM install:
 
