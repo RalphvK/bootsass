@@ -9,10 +9,23 @@ var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
 
 var path = {
-    scss: './scss/style.scss',
-    css: './css',
-    js_src: './scripts.js',
-    js: './js/'
+    env: 'standard',
+    standard: {
+        scss: './scss/style.scss',
+        css: './css',
+        js_src: './scripts.js',
+        js: './js/'
+    },
+    viggen: {
+        scss: './scss/style.scss',
+        css: './../public/css',
+        js_src: './scripts.js',
+        js: './../public/js/'
+    },
+    get scss() { return this[this.env].scss; },
+    get css() { return this[this.env].css; },
+    get js_src() { return this[this.env].js_src; },
+    get js() { return this[this.env].js; }
 };
 
 // scss
