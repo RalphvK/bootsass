@@ -1,0 +1,21 @@
+// reset padding and margin
+@mixin reset-p-m() {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+// apply col-padding to compensate for row negative margins
+@mixin col-padding() {
+    padding-right: ($grid-gutter-width / 2);
+    padding-left: ($grid-gutter-width / 2);
+}
+
+// add bigger icon classes
+.icon-md {
+    font-size: 1.6em;
+    vertical-align: middle;
+}
+.icon-md {
+    font-size: 2em;
+    vertical-align: middle;
+}

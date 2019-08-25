@@ -4,6 +4,7 @@ $body-bg: $white !default; // body background color
 
 // color-theme
 $primary:       $blue;
+$primary-muted: lighten(desaturate(adjust-hue($primary,-29deg),37%),28%);
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;

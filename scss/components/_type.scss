@@ -19,6 +19,15 @@
     @include subtitle();
 }
 
+@mixin overline() {
+    color: $secondary;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+.overline {
+    @include overline();
+}
+
 @mixin title-block() {
     display: block;
     text-align: center;
@@ -41,6 +50,20 @@ h2 {
 }
 h3 {
     @include h3();
+}
+
+@mixin h4() {
+    font-weight: 700;
+}
+h4 {
+    @include h4();
+}
+
+@mixin h5() {
+    font-weight: 700;
+}
+h5 {
+    @include h5();
 }
 
 @mixin h6() {
@@ -77,4 +100,7 @@ p {
 }
 .smooth {
     @include smooth();
+}
+.primary-muted {
+    color: $primary-muted;
 }

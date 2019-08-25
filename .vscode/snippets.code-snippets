@@ -7,6 +7,16 @@
 		],
 		"description": "Config map"
 	},
+	"Create SCSS Config Map": {
+		"prefix": "\\$cfg",
+		"scope": "scss",
+		"body": [
+			"\\$cfg: (",
+			"\t'${1:property}': ${2:value},",
+			");"
+		],
+		"description": "Config map"
+	},
 	"SCSS_Map": {
 		"prefix": "map-get",
 		"scope": "scss",
@@ -15,7 +25,7 @@
 		],
 		"description": "map-get"
 	},
-	"Absolute_Stretch": {
+	"Absolute Stretch": {
 		"prefix": "top:left:bottom:left:",
 		"scope": "css,scss",
 		"body": [
@@ -25,5 +35,23 @@
 			"left: 0;"
 		],
 		"description": "Absolute Stretch"
-	}
+	},
+	"Absolute Stretch (single line)": {
+		"prefix": "top:left:bottom:left:",
+		"scope": "css,scss",
+		"body": [
+			"top: 0; right: 0; bottom: 0; left: 0;",
+			""
+		],
+		"description": "Absolute Stretch (Single Line)"
+	},
+	"Reset Padding and Margin": {
+		"prefix": "reset-p-m",
+		"scope": "scss",
+		"body": [
+			"@include reset-p-m();",
+			"$0"
+		],
+		"description": "Reset Padding and Margin"
+	},
 }

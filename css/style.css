@@ -6049,6 +6049,11 @@ a.text-dark:hover, a.text-dark:focus {
   letter-spacing: 0.5px;
   line-height: 2em; }
 
+.overline {
+  color: #6c757d;
+  font-weight: 400;
+  margin-bottom: 1em; }
+
 .title-block {
   display: block;
   text-align: center; }
@@ -6060,6 +6065,12 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 2rem; }
+
+h4 {
+  font-weight: 700; }
+
+h5 {
+  font-weight: 700; }
 
 h6 {
   font-size: inherit;
@@ -6081,6 +6092,17 @@ p {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px; }
+
+.primary-muted {
+  color: #a4e8ea; }
+
+.icon-md {
+  font-size: 1.6em;
+  vertical-align: middle; }
+
+.icon-md {
+  font-size: 2em;
+  vertical-align: middle; }
 
 /*
 Buttons
