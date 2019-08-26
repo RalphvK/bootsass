@@ -63,4 +63,12 @@
 		],
 		"description": "Apply bootstrap .col padding"
 	},
+	"Col size to percentage": {
+		"prefix": "col-size",
+		"scope": "scss",
+		"body": [
+			"col-size($0)"
+		],
+		"description": "Use Bootstrap columns to get percentage value"
+	},
 }

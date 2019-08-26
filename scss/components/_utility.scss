@@ -19,3 +19,8 @@
     font-size: 2em;
     vertical-align: middle;
 }
+
+// Bootstrap column size to percentage
+@function col-size($size: 1) {
+    @return percentage($size / $grid-columns);
+}
