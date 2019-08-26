@@ -54,4 +54,13 @@
 		],
 		"description": "Reset Padding and Margin"
 	},
+	"Col padding": {
+		"prefix": "col-padding",
+		"scope": "scss",
+		"body": [
+			"@include col-padding();",
+			"$0"
+		],
+		"description": "Apply bootstrap .col padding"
+	},
 }
