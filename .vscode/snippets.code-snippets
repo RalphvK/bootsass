@@ -71,4 +71,12 @@
 		],
 		"description": "Use Bootstrap columns to get percentage value"
 	},
+	"Stagger animation mixin": {
+		"prefix": "stagger-animation",
+		"scope": "scss",
+		"body": [
+			"@include stagger-animation(\\$interval: ${1:100ms}, \\$through: ${2:20});"
+		],
+		"description": "Stagger animated children"
+	},
 }

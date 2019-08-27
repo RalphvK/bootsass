@@ -24,3 +24,12 @@
 @function col-size($size: 1) {
     @return percentage($size / $grid-columns);
 }
+
+// staggered animation
+@mixin stagger-animation($interval: 100ms, $through: 20) {
+    @for $i from 1 through $through {
+        &:nth-child(#{$i}) {
+            transition-delay: $interval * $i;
+        }
+    }
+}
