@@ -31,6 +31,23 @@ The combined javascript file ```js/scripts.min.js``` is compiled from the index 
 
 ```json
 {
+    "includes": {
+        "scripts": [
+            "./js/partials/common/**/*.js"
+        ],
+        "single": [
+            "./js/partials/single/**/*.js"
+        ]
+    }
+}
+```
+
+This setup will generate two different concatenated scripts in the output folder: ```scripts.js``` and ```single.js``` - each with a minified version. To add a new script output, simply add a new key (represents the output filename) to the ```"includes": {}``` object with an array of the included filepaths.
+
+The legacy single-output structure is still supported. The ```gulpfile.js``` script will use the old script if the ```"includes"``` element in index.json is an ```Array```. If not, the new method outlined above will be used.
+
+```json
+{
     "includes": [
         "./js/partials/**/*.js"
     ]
