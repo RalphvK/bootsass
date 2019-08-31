@@ -1,0 +1,32 @@
+/*!
+    Usage example:
+
+    @include masonry-columns((
+        xs: 1,
+        sm: 1,
+        md: 2,
+        lg: 3,
+        xl: 3
+    ));
+*/
+
+@mixin masonry-columns($column-count-map) {
+    // add column-width: auto
+    column-width: auto;
+    // foreach breakpoint
+    @each $name, $value in $grid-breakpoints {
+        // include media query
+        @include media-breakpoint-only($name) {
+            // get column-count from map
+            $column-count: map-get($column-count-map, $name);
+            // set column-count
+            column-count: $column-count;
+            // set column-gap
+            @if ($column-count > 1) {
+                column-gap: percentage(1 / (($column-count + 1) * 2));
+            } @else {
+                column-gap: 0%;
+            }
+        }
+    }
+}
