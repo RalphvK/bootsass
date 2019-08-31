@@ -1,14 +1,12 @@
-/*!
-    Usage example:
-
-    @include masonry-columns((
-        xs: 1,
-        sm: 1,
-        md: 2,
-        lg: 3,
-        xl: 3
-    ));
-*/
+// Usage example:
+// 
+// @include masonry-columns((
+//     xs: 1,
+//     sm: 1,
+//     md: 2,
+//     lg: 3,
+//     xl: 3
+// ));
 
 @mixin masonry-columns($column-count-map) {
     // add column-width: auto
