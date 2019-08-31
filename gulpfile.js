@@ -8,6 +8,7 @@ var minify = require('gulp-minify');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
 var mergeStream = require('merge-stream');
+var autoprefixer = require('gulp-autoprefixer');
 
 var path = {
     env: 'standard',
@@ -50,6 +51,9 @@ gulp.task('scss', function () {
 gulp.task('scss-minify', function () {
     return gulp.src(path.scss)
         .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest(path.css));
 });
