@@ -15,7 +15,7 @@ Run NPM install:
 
 ```npm install```
 
-Note: if you encounter any errors concerning Python, you may try running ```npm install --global windows-build-tools```.
+Note: if you encounter any errors concerning Python, you may try running ```npm install --global windows-build-tools``` and following the steps in [this](https://gist.github.com/jtrefry/fd0ea70a89e2c3b7779c) gist.
 
 If Gulp-CLI is not yet installed on the system, run:
 
